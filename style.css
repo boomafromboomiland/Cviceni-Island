@@ -48,6 +48,13 @@ body {
 	background: rgba(95, 95, 95, 0.5);
 }
 
+.header_headline,
+.header_p,
+.header_signature {
+	z-index: 5;
+	position: relative;
+}
+
 .header_headline {
 	font-size: 25px;
 	font-family: 'Raleway', sans-serif;
