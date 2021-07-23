@@ -166,7 +166,7 @@ a.underline {
 
 @media (min-width: 1200px) {
 	.header {
-		min-height: 400px;
+		min-height: 480px;
 	}
 	.header::before {
 		display: none;
