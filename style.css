@@ -35,6 +35,17 @@ body {
     min-height: 200px;
 	color: white;
 	text-align: center;
+	position: relative;
+}
+
+.header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(95, 95, 95, 0.5);
 }
 
 .header_headline {
@@ -77,19 +88,14 @@ a {
 
 .introduction,
 .why_text,
-.mustknow_text {
+.mustknow_text,
+.mustknow_text_2 {
 	margin: 5px 15px 20px 15px;
-}
-
-image.introduction_image,
-.why_image,
-.mustknow_image {
-	height: 200px;
-	width: 100%;
 }
 
 p.photoby {
 	text-align: center;
+	margin: 5px 0 10px 0;
 }
 
 a.href {
@@ -102,10 +108,34 @@ h2 {
 	margin: 10px 0px 5px 10px;
 }
 
-.line_2 {
+hr.line_2 {
 		width: 20%;
 		background-color: #629fe0;
 		height: 5px;
 		margin: 0;
 		border: none;
+}
+
+img {
+	height: 200px;
+	width: 100%;
+}
+
+hr.line_3 {
+	width: 20%;
+	background-color: #629fe0;
+	height: 5px;
+	margin: 20px 0;
+	border: none;
+}
+
+.footer {
+	background-color: #ffffff;
+	background-image: linear-gradient(360deg, #ffffff 0%, #d7e1ec 74%);
+	font-size: 12px;
+	padding: 10px;
+}
+
+a.underline {
+	text-decoration: underline;
 }
