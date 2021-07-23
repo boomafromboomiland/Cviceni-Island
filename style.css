@@ -32,7 +32,6 @@ body {
     background-size: cover;
     background-position: center, center;
     width: auto;
-    min-height: 200px;
 	color: white;
 	text-align: center;
 	position: relative;
@@ -145,4 +144,92 @@ hr.line_3 {
 
 a.underline {
 	text-decoration: underline;
+}
+
+@media (min-width: 576px) {
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+	img {
+		width: 50%;
+        min-height: 200px;
+	}
+
+	p.photoby,
+	a.href {
+		display: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		min-height: 400px;
+	}
+	.header::before {
+		display: none;
+	}
+	.content {
+		margin: -50px 50px 0 50px;
+		position: relative;
+		border: 0px solid white;
+		background-color: white;
+		box-shadow: 5px red;
+	}
+
+	.header_headline {
+		font-size: 80px;
+		font-weight: 800;
+	}
+
+	.header_p {
+		padding: 0 200px;
+		font-size: 20px;
+	}
+
+	.box {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 40px 0;
+	}
+
+	.introduction {
+		width: 75%;
+		text-align: left;
+		margin: 0 20px;
+	}
+
+	.menu {
+		text-align: left;
+		margin: 0 10px 0 0;
+	}
+
+	.introduction_image {
+		min-height: 500px;
+		width: 100%;
+	}
+
+	.why_image {
+		min-height: 400px;
+		width: 100%;
+	}
+
+	.mustknow_image {
+		min-height: 300px;
+		width: 100%;
+	}
+
+.why {
+	margin: 20px 0;
+}
+
+	.why_headline,
+	.why_text {
+		margin: 0 20px;
+	}
+
 }
